@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import './Home.css';
 import Table from '../../Components/Table/Table';
-import Formulario from '../../Components/Form/Formulario';
+import Form from '../../Components/Form/Form';
 import Header from '../../Components/Header/Header';
 import PopUp from '../../Utils/PopUp';
 import ApiService from '../../Utils/ApiService';
@@ -64,7 +64,7 @@ class App extends Component {
         <div className="container mb-10">
           <h1>Casa do código</h1>
           <Table autores={this.state.autores} removeAutor={this.removeAutor} />
-          <Formulario escutadorDeSubmit={this.escutadorDeSubmit} />
+          <Form escutadorDeSubmit={this.escutadorDeSubmit} />
         </div>
       </Fragment>
     );
